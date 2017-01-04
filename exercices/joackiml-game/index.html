@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   </head>
   <body>
-    <section id="idCard">
-      <h3>Result : </h3>
-      <div>
-        <h1 id="result">NO RESULT</h1>
-      </div>
-    </section>
+    <div class="container"> 
+      <section id="question">
+      Donne un nom de personnage de starwars :
+        <input id="response" type="text"/>
+
+        <button id="btn">load data</button>
+      </section>
+      <section id="idCard">
+        <div id="side"></div>
+      </section>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>
