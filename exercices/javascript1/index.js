@@ -33,33 +33,21 @@
   "url": "http://swapi.co/api/people/1/"
 };
   
-  document.querySelector('#fullName').innerHTML = personnage.name;
-  document.querySelector('#hairColor').innerHTML = personnage.hair_color;
-  document.querySelector('#eyeColor').innerHTML = personnage.eye_color;
+  var fullName = document.querySelector('#fullName')
+  var hairColor = document.querySelector('#hairColor')
+  var eyeColor = document.querySelector('#eyeColor')
 
   var btn = document.querySelector('#idCard .btn');
 
-  console.log(btn);
-  
-  window.btn = btn;
-
-  console.log(btn);
-
   var btnClickHandler = function(e) {
-    console.log('TODO ce bouton lance un random reload');
-  }
-
-  //document.btnClickHandler = btnClickHandler;
+    //console.log('TODO ce bouton lance un random reload');
+    fullName.innerHTML = personnage.name;
+    hairColor.innerHTML = personnage.hair_color;
+    eyeColor.innerHTML = personnage.eye_color;
+  };
 
   btn.addEventListener('click', btnClickHandler);
 
-/** /
-  if(personnage.name === 'Luke Skywalker') {
-    console.log('luke skywalker exists !');
-  } else {
-    console.log('Skywalker n\'existe pas !')
-  }
-/**/
 
 
 
